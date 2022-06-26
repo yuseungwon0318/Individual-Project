@@ -6,17 +6,19 @@ using UnityEngine.SceneManagement;
 
 public class EnemyManager : MonoBehaviour
 {
-    
 
-    float speed;
+    float enemyspeed;
+    static float enemymin= 2;
+    static float enemymax= 5;
+
     Vector3 dir;
     
     
     private void Start()
     {
-        float rds = Random.Range(2f, 5f);
+        float rds = Random.Range(enemymin, enemymax);
 
-        speed = rds;
+        enemyspeed = rds;
 
         int rd = Random.Range(0, 10);
         if (rd < 2)
@@ -53,7 +55,7 @@ public class EnemyManager : MonoBehaviour
     }
     void Update()
     {
-        transform.Translate(dir * speed * Time.deltaTime);
+        transform.Translate(dir * enemyspeed * Time.deltaTime);
 
        
     }

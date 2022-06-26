@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class score : MonoBehaviour
 {
     public Text current;
-    public float cs;
+    public Text best;
     public Image img;
 
     public Sprite SSS;
@@ -22,7 +22,7 @@ public class score : MonoBehaviour
         
         float cur = PlayerPrefs.GetFloat("Current");
 
-        current.text = "" + PlayerPrefs.GetFloat("Current");
+       
 
         if(cur >= 120)
         {
@@ -59,5 +59,6 @@ public class score : MonoBehaviour
     void Update()
     {
         current.text = string.Format("{0:N2}", PlayerPrefs.GetFloat("Current"));
+        best.text = string.Format("{0:N2}", PlayerPrefs.GetFloat("Best"));
     }
 }

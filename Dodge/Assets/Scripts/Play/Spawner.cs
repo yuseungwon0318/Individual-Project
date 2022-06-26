@@ -7,7 +7,7 @@ public class Spawner : MonoBehaviour
     public GameObject Enemy;
 
     public float difficulty = 3;
-
+    
     
     public void Start()
     {
