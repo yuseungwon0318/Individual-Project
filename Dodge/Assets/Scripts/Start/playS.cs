@@ -9,4 +9,8 @@ public class playS : MonoBehaviour
     {
         SceneManager.LoadScene("Play");
     }
+    public void clicko()
+    {
+        SceneManager.LoadScene("Option");
+    }
 }

@@ -8,13 +8,13 @@ public class EnemyManager : MonoBehaviour
 {
 
     float enemyspeed;
-    static float enemymin= 2;
-    static float enemymax= 5;
+    public static float enemymin = 2;
+    public static float enemymax = 5;
 
     Vector3 dir;
     
     
-    private void Start()
+    public void Start()
     {
         float rds = Random.Range(enemymin, enemymax);
 
