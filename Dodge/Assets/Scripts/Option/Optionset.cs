@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Optionset : MonoBehaviour
@@ -101,5 +102,7 @@ public class Optionset : MonoBehaviour
         Spawner.difficulty = 1;
         EnemyManager.enemymin = 3;
         EnemyManager.enemymax = 8;
+        SceneManager.LoadScene("Start");
+        
     }
 }

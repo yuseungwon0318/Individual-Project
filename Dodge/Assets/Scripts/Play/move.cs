@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class move : MonoBehaviour
 {
+    void Start()
+    {
+        transform.position = new Vector3(0, 0, 0);
+    }
+
     Vector3 dir;
     public float speed = 5;
 
@@ -28,6 +33,9 @@ public class move : MonoBehaviour
 
             transform.position = vec;
         }
+
+        
+        
 
     }
 }

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class EnemyManager : MonoBehaviour
 {
-
+    
     float enemyspeed;
     public static float enemymin = 2;
     public static float enemymax = 5;
@@ -66,20 +66,27 @@ public class EnemyManager : MonoBehaviour
         {
             SceneManager.LoadScene("GameOver");
         }
+        else if(other.CompareTag("Des"))
+        {
+            Destroy(gameObject);
+        }
         else
         {
+            
             Destroy(gameObject);
             Destroy(other.gameObject);
         }
 
     }
 
-   
-   
-
-        
 
     
+
+
+
+
+
+
 
 
 

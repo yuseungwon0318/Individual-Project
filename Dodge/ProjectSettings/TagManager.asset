@@ -8,6 +8,11 @@ TagManager:
   - R
   - U
   - D
+  - Des
+  - LL
+  - RR
+  - UU
+  - DD
   layers:
   - Default
   - TransparentFX

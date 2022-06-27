@@ -19,33 +19,33 @@ public class Spawner : MonoBehaviour
     {
         while(true)
         {
-            if(gameObject.CompareTag("U"))
+            if(gameObject.CompareTag("UU"))
             {
-                float positionX = Random.Range(-4.7f, 4.7f);
+                float positionX = Random.Range(-8.6f, 8.6f);
 
                 Vector3 EnemyPosition = new Vector3(positionX, transform.position.y);
 
                 Instantiate(Enemy, EnemyPosition, transform.rotation);
             }
-            if(gameObject.CompareTag("D"))
+            if(gameObject.CompareTag("DD"))
             {
-                float positionX = Random.Range(-4.7f, 4.7f);
+                float positionX = Random.Range(-8.6f, 8.6f);
 
                 Vector3 EnemyPosition = new Vector3(positionX, transform.position.y);
 
                 Instantiate(Enemy, EnemyPosition, transform.rotation);
             }
-            if (gameObject.CompareTag("R"))
+            if (gameObject.CompareTag("RR"))
             {
-                float positionY = Random.Range(-8.6f, 8.6f);
+                float positionY = Random.Range(-4.8f, 4.8f);
 
                 Vector3 EnemyPosition = new Vector3(transform.position.x, positionY);
 
                 Instantiate(Enemy, EnemyPosition, transform.rotation);
             }
-            if (gameObject.CompareTag("L"))
+            if (gameObject.CompareTag("LL"))
             {
-                float positionY = Random.Range(-8.6f, 8.6f);
+                float positionY = Random.Range(-4.8f, 4.8f);
 
                 Vector3 EnemyPosition = new Vector3(transform.position.x, positionY);
 
@@ -73,7 +73,7 @@ public class Spawner : MonoBehaviour
         {
             if (difficulty <= 0.6)
             {
-
+                
             }
             else
             {
@@ -81,6 +81,7 @@ public class Spawner : MonoBehaviour
                 yield return new WaitForSeconds(10f);
 
             }
+            yield return null;
         }
         
         
